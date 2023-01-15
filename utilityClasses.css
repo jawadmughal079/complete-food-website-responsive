@@ -1,0 +1,157 @@
+.flex {
+  display: flex;
+}
+.item-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.lowerShadow {
+  position: relative;
+  background: var(--pure);
+}
+.lowerShadow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -9px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  z-index: -1;
+  background-image: url("icons/shadow.svg");
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/*  csss for button */
+.btn {
+  padding: 0.5rem;
+  background: transparent;
+  font-family: "Raleway-semiBold";
+  /* font-display: uppercase; */
+  border: 1px solid transparent;
+  transition: all 0.7s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--heaven);
+  /* border: 1px solid var(--secondary); */
+}
+
+.btn-primary:hover {
+  background: var(--heaven);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--heaven);
+}
+.btn-secondary:hover {
+  background: var(--heaven);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-p5 {
+  padding: 0.5rem 0;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+
+/* css for text center */
+.text-center {
+  text-align: center;
+}
+
+/* css for heading shaow */
+.headingShadow {
+  font-family: "Raleway-medium";
+  position: relative;
+}
+.headingShadow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("/icons/hr.svg");
+  background-position: center;
+  bottom: -20;
+  width: 100%;
+  height: 22px;
+  /* z-index: -1; */
+}
+
+.sectonButton {
+  padding: 0.6rem 1rem;
+  color: var(--heaven);
+  background: var(--secondary);
+  outline: none;
+  border: 1px solid transparent;
+  transition: all 0.4 ease;
+  transition-duration: 600ms;
+}
+
+.sectonButton:hover {
+  background: var(--heaven);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+.text-left {
+  text-align: left;
+}
+
+.lowerShadow-sm {
+  position: relative;
+  background: var(--pure);
+}
+.lowerShadow-sm::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(/icons/shadow-sm.svg);
+  width: 100%;
+  height: 29px;
+  /* top: 100%; */
+  left: 50%;
+  bottom:-5px;
+  opacity: .50;
+  z-index: -1;
+  transform: translate( -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* bottom: -20px; */
+}
+
+
+.text-pure
+{
+  color: var(--pure);
+}
+
+ul
+{
+  list-style: none;
+}
+a{
+ text-decoration: none; 
+  color: var(--pure);
+}
